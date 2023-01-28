@@ -10,16 +10,17 @@
     -- customer.ts (get, set)
 */
 
-class Customer {
-  _id: string
-  _name: string
-  _address: string
-  _active: boolean = false
+import Address from "./address"
 
-  constructor(id: string, name: string, address: string) {
+class Customer {
+  private _id: string
+  private _name: string
+  private _address!: Address
+  private _active: boolean = false
+
+  constructor(id: string, name: string) {
     this._id = id
     this._name = name
-    this._address = address
 
     this.validate()
   }
@@ -49,6 +50,10 @@ class Customer {
 
   deactivate() {
     this._active = false
+  }
+
+  set Address(address: Address) {
+    this._address = address
   }
 }
 
