@@ -12,11 +12,11 @@
 
 import Address from "./address"
 
-class Customer {
-  private _id: string
-  private _name: string
-  private _address!: Address
-  private _active: boolean = false
+export default class Customer {
+  _id: string
+  _name: string
+  _address!: Address
+  _active: boolean = false
 
   constructor(id: string, name: string) {
     this._id = id

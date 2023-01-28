@@ -1,8 +1,8 @@
 export default class Address {
-  private _streat: string = ""
-  private _number: number = 0
-  private _zip: string = ""
-  private _city: string = ""
+  _streat: string = ""
+  _number: number = 0
+  _zip: string = ""
+  _city: string = ""
 
   constructor(streat : string, number: number, zip: string, city: string) {
     this._streat = streat
