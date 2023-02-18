@@ -8,6 +8,6 @@ const address = new Address('Rua três', 3, "20260-141", "Rio de Janeiro")
 customer.Address = address
 customer.activate()
 
-const item1 = new OrderItem("1234", "Item 1", 20)
-const item2 = new OrderItem("6789", "Item 2", 70)
-const order  = new Order("123", customer._id, [item1, item2])
+const item1 = new OrderItem("1234", "Item 1", 20, "123", 10)
+const item2 = new OrderItem("6789", "Item 2", 70, '123', 10)
+const order  = new Order("123", '123', [item1, item2])
